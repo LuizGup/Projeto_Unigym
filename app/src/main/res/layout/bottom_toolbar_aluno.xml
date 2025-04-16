@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/toolbarProfessor"
+        android:id="@+id/toolbarAluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#E1E1E1"
@@ -29,14 +29,14 @@
             app:srcCompat="@drawable/house_picture" />
 
         <ImageButton
-            android:id="@+id/btnAdd"
+            android:id="@+id/btnGym"
             style="@android:style/Widget.Material.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="@string/add_image_button"
-            app:srcCompat="@drawable/add_picture" />
+            android:contentDescription="@string/gym_image_button"
+            app:srcCompat="@drawable/halteres_1" />
 
         <ImageButton
             android:id="@+id/btnProfile"
