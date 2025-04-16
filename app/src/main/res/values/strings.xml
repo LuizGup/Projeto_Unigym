@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Unigym</string>
+
+    <!-- Botões da barra inferior -->
+    <string name="add_image_button">Adicionar nova imagem</string>
+    <string name="home_image_button">Ir para a tela inicial</string>
+    <string name="profile_image_button">Ver perfil do usuário</string>
+    <string name="gym_image_button">Verificar exercicios ou marcar aula</string>
 </resources>
