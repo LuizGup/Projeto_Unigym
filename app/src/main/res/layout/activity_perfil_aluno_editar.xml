@@ -4,17 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!-- Botão de voltar -->
+
+    <!-- Título -->
     <ImageButton
         android:id="@+id/btnVoltar"
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Voltar"
-        app:srcCompat="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/icone_voltar" />
 
-    <!-- Título -->
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
@@ -32,7 +35,8 @@
         android:id="@+id/imgPerfil"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="profile_picture.png"
+        android:src="@drawable/profile_picture"
+        android:scaleType="fitCenter"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/txtTitulo"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +49,7 @@
         android:layout_height="24dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Editar imagem"
-        app:srcCompat="@drawable/ic_edit"
+        app:srcCompat="@drawable/icone_edit"
         app:layout_constraintTop_toBottomOf="@id/imgPerfil"
         app:layout_constraintStart_toStartOf="@id/imgPerfil"
         app:layout_constraintEnd_toEndOf="@id/imgPerfil"
@@ -75,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Nome"
-                android:background="@color/light_gray"
+                android:background="@color/mediumGray"
                 android:padding="10dp" />
 
             <ImageButton
@@ -83,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Editar nome"
-                app:srcCompat="@drawable/ic_edit" />
+                app:srcCompat="@drawable/icone_edit" />
         </LinearLayout>
 
         <!-- Campo: Email -->
@@ -99,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Email"
-                android:background="@color/light_gray"
+                android:background="@color/mediumGray"
                 android:padding="10dp" />
 
             <ImageButton
@@ -107,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Editar email"
-                app:srcCompat="@drawable/ic_edit" />
+                app:srcCompat="@drawable/icone_edit" />
         </LinearLayout>
 
         <!-- Campo: Data de nascimento -->
@@ -123,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Data de nascimento"
-                android:background="@color/light_gray"
+                android:background="@color/mediumGray"
                 android:padding="10dp" />
 
             <ImageButton
@@ -131,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Editar data"
-                app:srcCompat="@drawable/ic_edit" />
+                app:srcCompat="@drawable/icone_edit" />
         </LinearLayout>
 
         <!-- Campo: Sexo -->
@@ -144,10 +148,10 @@
             <EditText
                 android:id="@+id/editSexo"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:hint="Sexo"
-                android:background="@color/light_gray"
+                android:background="@color/mediumGray"
                 android:padding="10dp" />
 
             <ImageButton
@@ -155,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Editar sexo"
-                app:srcCompat="@drawable/ic_edit" />
+                app:srcCompat="@drawable/icone_edit" />
         </LinearLayout>
     </LinearLayout>
 
