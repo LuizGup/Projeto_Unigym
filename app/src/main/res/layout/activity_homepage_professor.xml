@@ -11,8 +11,8 @@
         android:id="@+id/welcomeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
         android:gravity="start"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,55 +34,66 @@
 
     </LinearLayout>
 
-    <TableLayout
-        android:id="@+id/TableLayoutProfessor"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="113dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#F0E4E4"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/welcomeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLayout">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Aulas Agendadas" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Visualizar Treino" />
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Criar Ficha" />
-        </TableRow>
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:backgroundTint="#3F51B5"
+                android:paddingLeft="3dp"
+                android:paddingTop="50dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="50dp"
+                android:text="Aulas Agendadas" />
 
-    </TableLayout>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3F51B5"
+                android:paddingLeft="3dp"
+                android:paddingTop="50dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="50dp"
+                android:text="Visualizar Treino" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#3F51B5"
+            android:paddingLeft="100dp"
+            android:paddingTop="50dp"
+            android:paddingRight="100dp"
+            android:paddingBottom="50dp"
+            android:text="Criar Ficha" />
+
+    </LinearLayout>
 
     <include
         android:id="@+id/include2"
