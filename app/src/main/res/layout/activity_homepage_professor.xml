@@ -58,12 +58,12 @@
                 android:layout_marginRight="12dp"
                 android:layout_weight="1"
                 android:autoText="true"
-                android:background="@drawable/button_background"
                 android:paddingLeft="3dp"
                 android:paddingTop="50dp"
                 android:paddingRight="3dp"
                 android:paddingBottom="50dp"
                 android:text="Aulas Agendadas"
+                android:background="@drawable/button_background1"
                 android:textColor="#FFFFFF" />
 
 
@@ -75,12 +75,12 @@
                 android:layout_marginRight="0dp"
                 android:layout_weight="1"
                 android:autoText="true"
-                android:background="@drawable/button_background"
                 android:paddingLeft="3dp"
                 android:paddingTop="50dp"
                 android:paddingRight="3dp"
                 android:paddingBottom="50dp"
                 android:text="Visualizar Treino"
+                android:background="@drawable/button_background1"
                 android:textColor="#FFFFFF" />
 
 
@@ -92,12 +92,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:background="@drawable/button_background"
             android:paddingLeft="100dp"
             android:paddingTop="50dp"
             android:paddingRight="100dp"
             android:paddingBottom="50dp"
             android:text="Criar Ficha"
+            android:background="@drawable/button_background1"
             android:textColor="#FFFFFF" />
 
 
