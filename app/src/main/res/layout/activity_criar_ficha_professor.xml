@@ -36,6 +36,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/button_background1"
+                android:clickable="false"
                 android:paddingLeft="100dp"
                 android:paddingTop="50dp"
                 android:paddingRight="100dp"
@@ -47,8 +48,13 @@
                 android:id="@+id/MuscularGroups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily=" "
                 android:gravity="center"
-                android:text="Grupos Musculares" />
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="Grupos Musculares"
+                android:textScaleX="1"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
