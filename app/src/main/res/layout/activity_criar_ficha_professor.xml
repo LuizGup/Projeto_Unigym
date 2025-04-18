@@ -7,50 +7,63 @@
     android:layout_height="fill_parent"
     tools:context=".Homepage_Professor">
 
-    <include
-        layout="@layout/return_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="278dp" />
-
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="61dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include2">
 
-        <Button
-            android:id="@+id/button5"
+        <include
+            layout="@layout/return_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/button_background1"
-            android:paddingLeft="100dp"
-            android:paddingTop="50dp"
-            android:paddingRight="100dp"
-            android:paddingBottom="50dp"
-            android:text="Criar Ficha"
-            android:textColor="#FFFFFF" />
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView3"
+            <Button
+                android:id="@+id/CriarFicha_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background1"
+                android:paddingLeft="100dp"
+                android:paddingTop="50dp"
+                android:paddingRight="100dp"
+                android:paddingBottom="50dp"
+                android:text="Criar Ficha"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/MuscularGroups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Grupos Musculares" />
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/activity_tipo_ficha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/activity_tipo_ficha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="TextView" />
-
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
 
     <include
         android:id="@+id/include2"
