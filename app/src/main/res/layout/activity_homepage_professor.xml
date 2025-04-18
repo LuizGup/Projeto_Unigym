@@ -7,12 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".Homepage_Professor">
 
+    <include
+        layout="@layout/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:id="@+id/welcomeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
         android:gravity="start"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,26 +28,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Olá, Professorx!" />
+            android:text="Olá, Professorx!"
+            android:textSize="34sp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Bem vindo ao UniGym" />
+            android:text="Bem vindo ao UniGym"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/welcomeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeLayout">
 
         <LinearLayout
@@ -55,15 +63,15 @@
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:autoText="true"
-                android:paddingLeft="3dp"
-                android:paddingTop="50dp"
-                android:paddingRight="3dp"
-                android:paddingBottom="50dp"
-                android:text="Aulas Agendadas"
                 android:background="@drawable/button_background1"
+                android:paddingLeft="15dp"
+                android:paddingTop="60dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="60dp"
+                android:text="Aulas Agendadas"
                 android:textColor="#FFFFFF" />
 
 
@@ -71,16 +79,16 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="0dp"
                 android:layout_weight="1"
                 android:autoText="true"
-                android:paddingLeft="3dp"
-                android:paddingTop="50dp"
-                android:paddingRight="3dp"
-                android:paddingBottom="50dp"
-                android:text="Visualizar Treino"
                 android:background="@drawable/button_background1"
+                android:paddingLeft="10dp"
+                android:paddingTop="60dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="60dp"
+                android:text="Visualizar Treino"
                 android:textColor="#FFFFFF" />
 
 
@@ -92,12 +100,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:paddingLeft="100dp"
-            android:paddingTop="50dp"
-            android:paddingRight="100dp"
-            android:paddingBottom="50dp"
-            android:text="Criar Ficha"
             android:background="@drawable/button_background1"
+            android:paddingLeft="120dp"
+            android:paddingTop="40dp"
+            android:paddingRight="120dp"
+            android:paddingBottom="40dp"
+            android:text="Criar Ficha"
             android:textColor="#FFFFFF" />
 
 
