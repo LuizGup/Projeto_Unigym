@@ -40,7 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginTop="21dp"
-        android:backgroundTint="#F0E4E4"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="@+id/welcomeLayout"
@@ -56,28 +55,34 @@
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="12dp"
                 android:layout_weight="1"
                 android:autoText="true"
-                android:backgroundTint="#3F51B5"
                 android:paddingLeft="3dp"
                 android:paddingTop="50dp"
                 android:paddingRight="3dp"
                 android:paddingBottom="50dp"
-                android:text="Aulas Agendadas" />
+                android:text="Aulas Agendadas"
+                android:background="@drawable/button_background1"
+                android:textColor="#FFFFFF" />
+
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="0dp"
                 android:layout_weight="1"
-                android:backgroundTint="#3F51B5"
+                android:autoText="true"
                 android:paddingLeft="3dp"
                 android:paddingTop="50dp"
                 android:paddingRight="3dp"
                 android:paddingBottom="50dp"
-                android:text="Visualizar Treino" />
+                android:text="Visualizar Treino"
+                android:background="@drawable/button_background1"
+                android:textColor="#FFFFFF" />
+
 
         </LinearLayout>
 
@@ -86,12 +91,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#3F51B5"
+            android:layout_marginTop="15dp"
             android:paddingLeft="100dp"
             android:paddingTop="50dp"
             android:paddingRight="100dp"
             android:paddingBottom="50dp"
-            android:text="Criar Ficha" />
+            android:text="Criar Ficha"
+            android:background="@drawable/button_background1"
+            android:textColor="#FFFFFF" />
+
 
     </LinearLayout>
 
