@@ -7,6 +7,108 @@
     android:layout_height="match_parent"
     tools:context=".Homepage_Professor">
 
-    <include layout="@layout/bottom_toolbar_professor" />
+    <LinearLayout
+        android:id="@+id/welcomeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/helloProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Olá, Professorx!" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bem vindo ao UniGym" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/welcomeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:paddingLeft="3dp"
+                android:paddingTop="50dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="50dp"
+                android:text="Aulas Agendadas"
+                android:background="@drawable/button_background1"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:paddingLeft="3dp"
+                android:paddingTop="50dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="50dp"
+                android:text="Visualizar Treino"
+                android:background="@drawable/button_background1"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="100dp"
+            android:paddingTop="50dp"
+            android:paddingRight="100dp"
+            android:paddingBottom="50dp"
+            android:text="Criar Ficha"
+            android:background="@drawable/button_background1"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/bottom_toolbar_professor"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
