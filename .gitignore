@@ -1,6 +1,19 @@
+# Arquivos do Android Studio/IntelliJ
 *.iml
-.gradle
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/misc.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Arquivos específicos de configuração local
+local.properties
 /local.properties
+
+# Build e saída
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -11,6 +24,12 @@
 .DS_Store
 /build
 /captures
+.gradle
 .externalNativeBuild
 .cxx
-local.properties
+
+# Gradle version catalog (ignorado porque não está em uso)
+gradle/libs.versions.toml
+
+# Arquivos do macOS
+.DS_Store

@@ -17,6 +17,9 @@
             android:exported="false" />
         <activity
             android:name=".CriarFicha_Professor"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
