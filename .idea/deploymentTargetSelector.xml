@@ -8,10 +8,10 @@
       <SelectionState runConfigName="TelaInicial">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Homepage_Professor">
+      <SelectionState runConfigName="Tela_Login">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="TelaInicial (1)">
+      <SelectionState runConfigName="Homepage_Professor">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
