@@ -11,7 +11,10 @@
       <SelectionState runConfigName="Tela_Login">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Homepage_Professor">
+      <SelectionState runConfigName="Tela_EsquecerSenha">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Tela_EsquecerSenha (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
