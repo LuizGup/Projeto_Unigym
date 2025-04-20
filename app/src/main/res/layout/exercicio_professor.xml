@@ -15,7 +15,6 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            tools:srcCompat="@tools:sample/avatars"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginBottom="40dp"
@@ -27,8 +26,6 @@
             android:orientation="vertical">
 
             <LinearLayout
-                tools:layout_editor_absoluteX="-56dp"
-                tools:layout_editor_absoluteY="245dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
