@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_CadastroAluno">
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="159dp"
+      android:layout_height="159dp"
+      android:layout_marginTop="61dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/Digitar_Nome_prof"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/image_2" />
+
+  <EditText
+      android:id="@+id/Digitar_Nome_prof"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Digite seu Nome"
+      app:layout_constraintBottom_toTopOf="@+id/Digitar_DataNiv_prof"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+  <EditText
+      android:id="@+id/Digitar_DataNiv_prof"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="13dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Digite seu Aniversario"
+      app:layout_constraintBottom_toTopOf="@+id/Digitar_email_prof"
+      app:layout_constraintStart_toStartOf="@+id/Digitar_Nome_prof"
+      app:layout_constraintTop_toBottomOf="@+id/Digitar_Nome_prof" />
+
+  <EditText
+      android:id="@+id/Digitar_email_prof"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="E-mail"
+      app:layout_constraintBottom_toTopOf="@+id/Digitar_senha_prof"
+      app:layout_constraintStart_toStartOf="@+id/Digitar_DataNiv_prof"
+      app:layout_constraintTop_toBottomOf="@+id/Digitar_DataNiv_prof" />
+
+  <EditText
+      android:id="@+id/Digitar_senha_prof"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="19dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Senha"
+      app:layout_constraintBottom_toTopOf="@+id/Digitar_sexo_prof"
+      app:layout_constraintStart_toStartOf="@+id/Digitar_email_prof"
+      app:layout_constraintTop_toBottomOf="@+id/Digitar_email_prof" />
+
+  <EditText
+      android:id="@+id/Digitar_sexo_prof"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Sexo (opcional)"
+      app:layout_constraintBottom_toTopOf="@+id/Criar_conta_prof"
+      app:layout_constraintStart_toStartOf="@+id/Digitar_senha_prof"
+      app:layout_constraintTop_toBottomOf="@+id/Digitar_senha_prof" />
+
+  <Button
+      android:id="@+id/Criar_conta_prof"
+      android:layout_width="163dp"
+      android:layout_height="51dp"
+      android:layout_marginBottom="149dp"
+      android:backgroundTint="#3F51B5"
+      android:text="Criar Conta"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Digitar_sexo_prof" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
