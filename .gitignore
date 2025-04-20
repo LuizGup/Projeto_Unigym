@@ -29,7 +29,7 @@ local.properties
 .cxx
 
 # Gradle version catalog (ignorado porque não está em uso)
-gradle/libs.versions.toml
+
 
 # Arquivos do macOS
 .DS_Store
