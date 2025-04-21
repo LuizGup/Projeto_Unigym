@@ -67,16 +67,13 @@
 
         </LinearLayout>
 
-        <include
-            layout="@layout/activity_treinos_criados"
+        <com.example.unigym.TreinoView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <include
-            layout="@layout/activity_treinos_criados"
+        <com.example.unigym.TreinoView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
 
     <include
