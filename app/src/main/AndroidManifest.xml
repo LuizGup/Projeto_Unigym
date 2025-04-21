@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Unigym"
         tools:targetApi="31">
         <activity
-            android:name=".CriarOpcaoDialog"
+            android:name=".DialogMarcarAula_Professor"
             android:exported="false" />
         <activity
             android:name=".Calendario_Aulas_Professor"
