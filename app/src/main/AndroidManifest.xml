@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Unigym"
         tools:targetApi="31">
         <activity
-            android:name=".DialogMarcarAula_Professor"
+            android:name=".TreinoView"
             android:exported="false" />
+        <activity
+            android:name=".TreinosCriados"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Calendario_Aulas_Professor"
             android:exported="true">
