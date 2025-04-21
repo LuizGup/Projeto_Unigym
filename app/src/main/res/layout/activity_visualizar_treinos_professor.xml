@@ -68,12 +68,12 @@
         </LinearLayout>
 
         <include
-            layout="@layout/treinos_criados"
+            layout="@layout/activity_treinos_criados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <include
-            layout="@layout/treinos_criados"
+            layout="@layout/activity_treinos_criados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
