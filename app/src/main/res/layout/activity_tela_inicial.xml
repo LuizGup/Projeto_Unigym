@@ -10,55 +10,57 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="157dp"
-        android:layout_height="156dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="154dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/Titulo_Inicial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image_2" />
 
     <Button
         android:id="@+id/CriarConta"
-        android:layout_width="238dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="512dp"
+        android:layout_width="248dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="19dp"
         android:backgroundTint="#3F51B5"
         android:text="Criar Conta"
         android:textColor="#F1F1F2"
         android:textColorHighlight="#3F51B5"
         android:textColorHint="#3F51B5"
         android:textColorLink="#673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Jaenossoaluno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Já é nosso aluno"
-        android:textColor="#040404"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/Já_tem_cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CriarConta"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Inicial" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/Já_tem_cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="252dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="176dp"
         android:backgroundTint="#00FFFFFF"
-        android:text="Já é nosso Professor"
+        android:text="Já tem cadastro"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/CriarConta"
+        app:layout_constraintTop_toBottomOf="@+id/CriarConta" />
+
+    <TextView
+        android:id="@+id/Titulo_Inicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="151dp"
+        android:text="Bem Vindo ao UnyGym"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CriarConta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

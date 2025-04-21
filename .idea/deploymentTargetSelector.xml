@@ -5,10 +5,17 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="VisualizarTreinos_Professor (2)">
+ 
+      <SelectionState runConfigName="TelaCadastro_Aluno">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="Tela_Login">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="TelaInicial">
+
       <SelectionState runConfigName="VisualizarTreinos_Professor">
+        
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
