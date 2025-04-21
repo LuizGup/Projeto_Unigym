@@ -7,21 +7,14 @@ import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
 
-class CriarOpcaoDialog : DialogFragment() {
-
+class DialogMarcarAula_Professor : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_criar_opcao_dialog, null)
+        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_marcar_aula_professor, null)
 
-        val btnExercicio = view.findViewById<ImageButton>(R.id.btnConfirmarFicha)
-        val btnFicha = view.findViewById<ImageButton>(R.id.btnFicha)
+        val btnConfirmarFicha = view.findViewById<ImageButton>(R.id.btnConfirmarFicha)
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
-        btnExercicio.setOnClickListener {
-            // Ação ao clicar em "exercicio"
-            dismiss()
-        }
-
-        btnFicha.setOnClickListener {
+        btnConfirmarFicha.setOnClickListener {
             // Ação ao clicar em "Ficha"
             dismiss()
         }
