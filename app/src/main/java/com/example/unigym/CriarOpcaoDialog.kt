@@ -1,6 +1,7 @@
 package com.example.unigym
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
@@ -14,20 +15,21 @@ class CriarOpcaoDialog : DialogFragment() {
 
         val btnExercicio = view.findViewById<ImageButton>(R.id.btnConfirmarFicha)
         val btnFicha = view.findViewById<ImageButton>(R.id.btnFicha)
-        val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
+        val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar)
 
         btnExercicio.setOnClickListener {
-            // Ação ao clicar em "exercicio"
+            val intent = Intent(requireContext(), CriarExercicio_Professor::class.java)
+            startActivity(intent)
             dismiss()
         }
 
         btnFicha.setOnClickListener {
-            // Ação ao clicar em "Ficha"
+            val intent = Intent(requireContext(), CriarFicha_Professor::class.java)
+            startActivity(intent)
             dismiss()
         }
 
         btnCancelar.setOnClickListener {
-            // Apenas fecha o dialog
             dismiss()
         }
 
