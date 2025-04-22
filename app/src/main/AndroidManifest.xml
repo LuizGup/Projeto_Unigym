@@ -16,10 +16,10 @@
             android:name=".ReturnView"
             android:exported="false" />
         <activity
-            android:name=".TreinoView"
+            android:name=".professor.TreinoView"
             android:exported="false" />
         <activity
-            android:name=".TreinosCriados"
+            android:name=".professor.TreinosCriados"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Calendario_Aulas_Professor"
+            android:name=".professor.Calendario_Aulas_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CriarTreino_Professor"
+            android:name=".professor.CriarTreino_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +46,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AulasMarcadas_Professor"
+            android:name=".professor.AulasMarcadas_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CriarExercicio_Professor"
+            android:name=".professor.CriarExercicio_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,7 +64,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TelaCadastro_Aluno"
+            android:name=".aluno.TelaCadastro_Aluno"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -73,7 +73,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VisualizarTreinos_Professor"
+            android:name=".professor.VisualizarTreinos_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -91,7 +91,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TipoFicha"
+            android:name=".professor.TipoFicha"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -100,7 +100,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CriarFicha_Professor"
+            android:name=".professor.CriarFicha_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -127,7 +127,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Homepage_Professor"
+            android:name=".professor.Homepage_Professor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

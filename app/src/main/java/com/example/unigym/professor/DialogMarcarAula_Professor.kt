@@ -1,22 +1,22 @@
-package com.example.unigym
+package com.example.unigym.professor
 
-import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import com.example.unigym.R
 
-class DialogEditarPerfilProfessor : DialogFragment() {
+class DialogMarcarAula_Professor : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_perfil_professor_confirmar_editar, null)
+        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_marcar_aula_professor, null)
 
         val btnConfirmarFicha = view.findViewById<ImageButton>(R.id.btnConfirmarFicha)
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarFicha.setOnClickListener {
-            // Ação ao clicar em "confirmar alterações"
+            // Ação ao clicar em "Ficha"
             dismiss()
         }
 

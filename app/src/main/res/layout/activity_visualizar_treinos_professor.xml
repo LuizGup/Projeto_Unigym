@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".VisualizarTreinos_Professor">
+    tools:context=".professor.VisualizarTreinos_Professor">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
