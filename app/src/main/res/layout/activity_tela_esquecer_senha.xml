@@ -7,50 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".Tela_EsquecerSenha">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="179dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toTopOf="@+id/NovaSenha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <TextView
-        android:id="@+id/Titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
-        android:text="UnyGym"
-        app:layout_constraintBottom_toTopOf="@+id/NovaSenha"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="179dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/image_2" />
 
-    <EditText
-        android:id="@+id/NovaSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Nova senha"
-        app:layout_constraintBottom_toTopOf="@+id/enviodesenha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:text="UnyGym"
+            android:textSize="40sp" />
 
-    <Button
-        android:id="@+id/enviodesenha"
-        android:layout_width="158dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="227dp"
-        android:backgroundTint="#3F51B5"
-        android:text="Enviar Senha"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NovaSenha" />
+        <EditText
+            android:id="@+id/NovaSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="60px"
+            android:text="Nova senha" />
+
+        <Button
+            android:id="@+id/enviodesenha"
+            android:layout_width="158dp"
+            android:layout_height="59dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Enviar Senha"
+            tools:layout_marginBottom="20dp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

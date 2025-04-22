@@ -7,84 +7,66 @@
     android:layout_height="match_parent"
     tools:context=".Tela_Login">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="165dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginBottom="146dp"
-        app:layout_constraintBottom_toTopOf="@+id/esqueceusenha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_2" />
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="-1dp">
 
-    <EditText
-        android:id="@+id/Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Digite seu E-mail"
-        app:layout_constraintBottom_toTopOf="@+id/Senha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="165dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="80dp"
+            app:srcCompat="@drawable/image_2" />
 
-    <EditText
-        android:id="@+id/Senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Digite sua senha"
-        app:layout_constraintBottom_toTopOf="@+id/Entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="48px"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="48px"
+            android:text="Digite seu e-mail" />
 
-    <Button
-        android:id="@+id/Entrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="38dp"
-        android:backgroundTint="#3F51B5"
-        android:text="Entrar"
-        app:layout_constraintBottom_toTopOf="@+id/Ntemcadastro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Senha" />
+        <EditText
+            android:id="@+id/Senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="48px"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="48px"
+            android:text="Digite sua senha" />
 
-    <Button
-        android:id="@+id/Ntemcadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="123dp"
-        android:backgroundTint="#003F51B5"
-        android:text="Não possui cadastro"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Entrar" />
+        <Button
+            android:id="@+id/esqueceusenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Esqueceu sua senha"
+            android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/esqueceusenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="252dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Esqueceu sua senha"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        <Button
+            android:id="@+id/Entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/Ntemcadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#003F51B5"
+            android:text="Não possui cadastro"
+            android:textColor="#000000" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
