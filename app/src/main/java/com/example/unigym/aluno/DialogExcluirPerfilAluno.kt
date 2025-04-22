@@ -1,4 +1,4 @@
-package com.example.unigym
+package com.example.unigym.aluno
 
 import android.app.Dialog
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import com.example.unigym.R
 
 class DialogExcluirPerfilAluno : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

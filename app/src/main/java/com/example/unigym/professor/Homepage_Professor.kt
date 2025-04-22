@@ -1,4 +1,4 @@
-package com.example.unigym
+package com.example.unigym.professor
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.unigym.R
 
 class Homepage_Professor : AppCompatActivity() {
 

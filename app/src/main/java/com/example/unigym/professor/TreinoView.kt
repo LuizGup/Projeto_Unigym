@@ -1,4 +1,4 @@
-package com.example.unigym
+package com.example.unigym.professor
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.fragment.app.FragmentActivity
+import com.example.unigym.R
 
 class TreinoView @JvmOverloads constructor(
     context: Context,

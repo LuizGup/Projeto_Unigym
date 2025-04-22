@@ -1,4 +1,4 @@
-package com.example.unigym
+package com.example.unigym.professor
 
 import android.app.Dialog
 import android.content.Intent
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import com.example.unigym.R
 
 class CriarOpcaoDialog : DialogFragment() {
 
