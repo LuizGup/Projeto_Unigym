@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".professor.Homepage_Professor">
+    tools:context=".professor.CriarFicha_Professor">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <include
             layout="@layout/top_toolbar"
@@ -23,7 +24,7 @@
         <com.example.unigym.ReturnView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:returnActivity="com.example.unigym..professor.Homepage_Professor" />
+            app:returnActivity="com.example.unigym.professor.Homepage_Professor" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -82,9 +83,9 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:currentScreen="CriarFicha_Professor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:currentScreen=""/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

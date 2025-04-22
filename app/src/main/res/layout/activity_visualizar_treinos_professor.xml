@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <include
             layout="@layout/top_toolbar"
@@ -79,9 +80,9 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:currentScreen="VisualizarTreinos_Professor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:currentScreen=""/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
