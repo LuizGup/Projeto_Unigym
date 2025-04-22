@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Unigym"
         tools:targetApi="31">
         <activity
+            android:name=".ReturnView"
+            android:exported="false" />
+        <activity
             android:name=".TreinoView"
             android:exported="false" />
         <activity

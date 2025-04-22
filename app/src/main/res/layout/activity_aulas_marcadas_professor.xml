@@ -20,11 +20,10 @@
             layout="@layout/top_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <include
-            layout="@layout/return_button"
+        <com.example.unigym.ReturnView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:returnActivity="com.example.unigym.Calendario_Aulas_Professor" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
