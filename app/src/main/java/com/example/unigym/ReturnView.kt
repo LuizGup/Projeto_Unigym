@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
 
 class ReturnView @JvmOverloads constructor(
     context: Context,
@@ -17,7 +16,7 @@ class ReturnView @JvmOverloads constructor(
     init {
         LayoutInflater.from(context).inflate(R.layout.view_return, this, true)
 
-        val btnReturn = findViewById<ImageButton>(R.id.btnReturn)
+        val btnReturn = findViewById<ImageButton>(R.id.btnHome)
 
         // Lê o atributo personalizado
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ReturnView)

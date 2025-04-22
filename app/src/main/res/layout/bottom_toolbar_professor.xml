@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageButton
-            android:id="@+id/btnReturn"
+            android:id="@+id/btnHome"
             style="@android:style/Widget.Material.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -31,7 +31,7 @@
             app:srcCompat="@drawable/house_picture" />
 
         <ImageButton
-            android:id="@+id/btnAdd"
+            android:id="@+id/btnCreate"
             style="@android:style/Widget.Material.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

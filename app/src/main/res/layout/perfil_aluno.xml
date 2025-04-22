@@ -19,7 +19,7 @@
     <com.example.unigym.ReturnView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:returnActivity="com.example.unigym.Homepage_Professor" />
+        app:returnActivity="com.example.unigym.professor.Homepage_Professor" />
 
     <ImageView
         android:id="@+id/profile_icon"
