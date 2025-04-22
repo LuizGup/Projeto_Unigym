@@ -7,14 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".Tela_Login">
 
+    <com.example.unigym.ReturnView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:returnActivity="com.example.unigym.TelaInicial" />
     <LinearLayout
         android:id="@+id/LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="-1dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
 
         <ImageView
             android:id="@+id/imageView2"

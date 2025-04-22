@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".aluno.TelaCadastro_Aluno">
 
+  <com.example.unigym.ReturnView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:returnActivity="com.example.unigym.TelaInicial" />
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
