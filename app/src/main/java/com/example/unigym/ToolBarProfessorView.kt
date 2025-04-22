@@ -1,5 +1,6 @@
 package com.example.unigym
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.util.AttributeSet
@@ -11,6 +12,7 @@ import com.example.unigym.professor.Homepage_Professor
 import com.example.unigym.professor.CriarOpcaoDialog
 
 
+@SuppressLint("CustomViewStyleable")
 class ToolBarProfessorView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null
@@ -20,8 +22,8 @@ class ToolBarProfessorView @JvmOverloads constructor(
         LayoutInflater.from(context).inflate(R.layout.activity_tool_bar_professor, this, true)
 
         // Lê o atributo personalizado
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ToolBarProfessorView)
-        val currentScreenName = typedArray.getString(R.styleable.ToolBarProfessorView_currentScreen)
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ToolBarView)
+        val currentScreenName = typedArray.getString(R.styleable.ToolBarView_currentScreen)
         typedArray.recycle()
 
         val btnHome = findViewById<ImageButton>(R.id.btnHome)

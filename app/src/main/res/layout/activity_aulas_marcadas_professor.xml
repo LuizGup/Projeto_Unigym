@@ -13,8 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <include
             layout="@layout/top_toolbar"
@@ -78,11 +77,12 @@
 
     </LinearLayout>
 
-    <include
-        android:id="@+id/include2"
-        layout="@layout/bottom_toolbar_professor"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
+    <com.example.unigym.ToolBarProfessorView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:currentScreen=""/>
 </androidx.constraintlayout.widget.ConstraintLayout>

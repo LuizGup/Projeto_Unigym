@@ -185,12 +185,12 @@
     </LinearLayout>
 
     <!-- Bottom Toolbar -->
-    <include
-        android:id="@+id/include_bottom"
-        layout="@layout/bottom_toolbar_professor"
-        android:layout_width="match_parent"
+    <com.example.unigym.ToolBarProfessorView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:currentScreen=""/>
 </androidx.constraintlayout.widget.ConstraintLayout>
