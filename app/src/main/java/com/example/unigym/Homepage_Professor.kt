@@ -33,7 +33,7 @@ class Homepage_Professor : AppCompatActivity() {
 
         // Ação: Ir para aulas agendadas
         btnAulasAgendadas.setOnClickListener {
-            startActivity(Intent(this, AulasMarcadas_Professor::class.java))
+            startActivity(Intent(this, Calendario_Aulas_Professor::class.java))
         }
 
         // Ação: Ir para visualizar treinos
