@@ -2,20 +2,10 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="app">
+      <SelectionState runConfigName="CriarExercicio_Professor">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
- 
-      <SelectionState runConfigName="TelaCadastro_Aluno">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="Tela_Login">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="TelaInicial">
-
-      <SelectionState runConfigName="VisualizarTreinos_Professor">
-        
+      <SelectionState runConfigName="TelaInicial (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
