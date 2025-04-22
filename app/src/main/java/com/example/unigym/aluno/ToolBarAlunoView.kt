@@ -1,4 +1,4 @@
-package com.example.unigym
+package com.example.unigym.aluno
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,9 +7,8 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageButton
 import android.widget.LinearLayout
-import androidx.fragment.app.FragmentActivity
+import com.example.unigym.R
 import com.example.unigym.professor.Homepage_Professor
-import com.example.unigym.professor.CriarOpcaoDialog
 
 
 @SuppressLint("CustomViewStyleable")
