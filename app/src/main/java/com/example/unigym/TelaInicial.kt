@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.unigym.professor.CriarOpcaoDialog
 
 class TelaInicial : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,11 @@ class TelaInicial : AppCompatActivity() {
         val criarconta = findViewById<Button>(R.id.CriarConta)
         val jatemcadastro = findViewById<Button>(R.id.Já_tem_cadastro)
 
-
+        //POP UP
+        criarconta.setOnClickListener{
+            val dialog = Dialog_Cadastro_ProfouAluno()
+            dialog.show(supportFragmentManager, "Dialog_Cadastro_ProfouAluno")
+        }
         //troca de tela JA TEM CADASTRO
         jatemcadastro.setOnClickListener{
             startActivity(Intent(this, Tela_Login::class.java))
