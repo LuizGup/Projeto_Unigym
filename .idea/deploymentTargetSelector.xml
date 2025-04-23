@@ -4,7 +4,6 @@
     <selectionStates>
       <SelectionState runConfigName="TelaInicial">
         <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="Tela_Login (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
