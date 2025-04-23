@@ -23,6 +23,7 @@ class Dialog_Cadastro_ProfouAluno : DialogFragment() {
             startActivity(intent)
             dismiss()
         }
+        //
 
         btnaluno.setOnClickListener {
             val intent = Intent(requireContext(), TelaCadastro_Aluno::class.java)
