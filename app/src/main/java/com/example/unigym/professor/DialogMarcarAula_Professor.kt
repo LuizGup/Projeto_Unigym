@@ -1,6 +1,7 @@
 package com.example.unigym.professor
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
@@ -16,7 +17,8 @@ class DialogMarcarAula_Professor : DialogFragment() {
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarFicha.setOnClickListener {
-            // Ação ao clicar em "Ficha"
+            val intent = Intent(requireContext(), Homepage_Professor::class.java)
+            startActivity(intent)
             dismiss()
         }
 
