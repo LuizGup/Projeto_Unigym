@@ -1,6 +1,7 @@
 package com.example.unigym.professor
 
 import android.content.Context
+import android.content.Intent
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageButton
@@ -22,6 +23,11 @@ class TreinoView @JvmOverloads constructor(
                 val dialog = ApagarTreinoDialog()
                 dialog.show((context as FragmentActivity).supportFragmentManager, "ApagarTreinoDialog")
             }
+        }
+        val btnEditar = findViewById<ImageButton>(R.id.btnEditar)
+        btnEditar.setOnClickListener {
+            val intent = Intent(context, CriarTreino_Professor::class.java)
+            context.startActivity(intent)
         }
 
         // Você pode adicionar mais lógicas aqui, como setar dados no layout
