@@ -2,8 +2,11 @@ package com.example.unigym.aluno
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.unigym.DialogAlterarSenhaAluno
 import com.example.unigym.R
 import com.example.unigym.professor.DialogAlterarSenhaProfessor
@@ -31,6 +34,19 @@ class PerfilAluno: AppCompatActivity() {
             dialog.show(supportFragmentManager, "dialog_excluir_perfil")
         }
     }
-}
+    fun mostrarNotificacaoAlteracao() {
+        val inflater = layoutInflater
+        val notificacaoView = inflater.inflate(R.layout.activity_notificacao_aluno_alterar_senha, null)
+
+        val layoutPrincipal = findViewById<ConstraintLayout>(R.id.notificacao_aluno_alterar_senha)
+        layoutPrincipal.addView(notificacaoView)
+        //faz com que demore um pouco pra sair a notificação
+        Handler(Looper.getMainLooper()).postDelayed({
+            layoutPrincipal.removeView(notificacaoView)
+        }, 4000)
+    }
+
+    }
+
 
 

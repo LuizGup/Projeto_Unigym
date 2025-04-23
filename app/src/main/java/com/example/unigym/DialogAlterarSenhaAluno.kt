@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import com.example.unigym.aluno.PerfilAluno
 
 class DialogAlterarSenhaAluno : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -16,6 +17,7 @@ class DialogAlterarSenhaAluno : DialogFragment() {
 
         btnConfirmarFicha.setOnClickListener {
             // Ação ao clicar em "confirmar alterações"
+            (activity as? PerfilAluno)?.mostrarNotificacaoAlteracao()
             dismiss()
         }
 
