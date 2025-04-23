@@ -17,17 +17,21 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Ícone de perfil com lápis -->
+
+    <!-- Conteúdo da Página -->
     <ImageView
         android:id="@+id/profile_icon"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginTop="88dp"
         android:contentDescription="Ícone de perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="84dp"
         tools:ignore="MissingConstraints" />
 
-    <!-- Conteúdo da Página -->
     <ImageButton
         android:id="@+id/edit_profile"
         android:layout_width="24dp"
@@ -175,4 +179,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:currentScreen=""/>
+
+    <com.example.unigym.ReturnView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:returnActivity="com.example.unigym.professor.PerfilProfessor"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="11dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
