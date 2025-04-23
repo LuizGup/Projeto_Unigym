@@ -83,7 +83,7 @@
             android:hint="Sexo" />
 
         <Button
-            android:id="@+id/btn_editar_dados"
+            android:id="@+id/btn_editar_dados_professor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -92,7 +92,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/btn_alterar_senha"
+            android:id="@+id/btn_alterar_senha_professor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
