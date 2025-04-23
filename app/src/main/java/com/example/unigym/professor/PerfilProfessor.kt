@@ -16,12 +16,17 @@ class PerfilProfessor : AppCompatActivity(){
 
             val intent = Intent(this, PerfilProfessorEditar::class.java)
             startActivity(intent)
-
-            val btnAlterarSenha = findViewById<Button>(R.id.btn_alterar_senha_professor)
+        }
+        val btnAlterarSenha = findViewById<Button>(R.id.btn_alterar_senha_professor)
             btnAlterarSenha.setOnClickListener {
                 val dialog = DialogAlterarSenhaProfessor()
                 dialog.show(supportFragmentManager, "dialog_alterar_senha")
-            }
+
      }
+        val btnExcluirConta = findViewById<Button>(R.id.btn_excluir_conta)
+        btnExcluirConta.setOnClickListener {
+            val dialog = DialogExcluirPerfilProfessor()
+            dialog.show(supportFragmentManager, "dialog_excluir_perfil")
+        }
     }
 }

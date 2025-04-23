@@ -2,18 +2,13 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="TelaInicial">
-        <option name="selectionMode" value="DROPDOWN" />
-      <SelectionState runConfigName="Tela_Login (1)">
+      <SelectionState runConfigName="PerfilAluno (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Tela_EsquecerSenha">
+      <SelectionState runConfigName="PerfilProfessorEditar (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Tela_EsquecerSenha (1)">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="Tela_EsquecerSenha (2)">
+      <SelectionState runConfigName="PerfilAlunoEditar">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

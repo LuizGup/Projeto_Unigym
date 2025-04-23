@@ -7,4 +7,7 @@
     <string name="profile_image_button">Ver perfil do usuário</string>
     <string name="gym_image_button">Verificar exercicios ou marcar aula</string>
     <string name="voltar_description">Voltar para a tela anterior</string>
+    <string name="desc_btn_cancelar">Cancelar</string>
+    <string name="desc_btn_confirmarficha">Confirmar</string>
+
 </resources>
