@@ -45,7 +45,10 @@ class ToolBarProfessorView @JvmOverloads constructor(
         }
 
         btnProfile.setOnClickListener {
-            // ação futura
+            if (currentScreenName != "PerfilProfessor") {
+                val intent = Intent(context, PerfilProfessor::class.java)
+                context.startActivity(intent)
+            }
         }
     }
 }
