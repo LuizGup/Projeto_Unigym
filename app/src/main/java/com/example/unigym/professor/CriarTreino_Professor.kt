@@ -27,7 +27,7 @@ class CriarTreino_Professor : AppCompatActivity() {
         }
         val btnAdicionarExercicio = findViewById<ImageButton>(R.id.btnAdicionarExercicio)
         btnAdicionarExercicio.setOnClickListener {
-            val intent = Intent(this, CriarTreino_Professor::class.java)
+            val intent = Intent(this, ExerciciosCriadosAdicionar::class.java)
             startActivity(intent)
         }
     }
