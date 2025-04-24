@@ -30,6 +30,6 @@ class TreinoView @JvmOverloads constructor(
             context.startActivity(intent)
         }
 
-        // Você pode adicionar mais lógicas aqui, como setar dados no layout
+
     }
 }

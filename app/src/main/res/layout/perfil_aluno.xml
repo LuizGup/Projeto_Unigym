@@ -124,7 +124,7 @@
         android:id="@+id/returnView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:returnActivity="com.example.unigym.professor.Homepage_Aluno(Refazer com o link certo)"
+        app:returnActivity="com.example.unigym.aluno.HomePageAluno"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="5dp">
 

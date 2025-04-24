@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aluno.ConfirmarDataAluno">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.unigym.ReturnView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:returnActivity="com.example.unigym.aluno.DiasDisponiveisParaMarcarAluno" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/CriarFicha_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_background1"
+                android:clickable="false"
+                android:paddingLeft="100dp"
+                android:paddingTop="50dp"
+                android:paddingRight="100dp"
+                android:paddingBottom="50dp"
+                android:text="Horarios disponíveis"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+
+        <com.example.unigym.aluno.ConfirmarDataAlunoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.unigym.aluno.ConfirmarDataAlunoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.example.unigym.professor.ToolBarProfessorView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:currentScreen="AulasMarcadas_Professor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
