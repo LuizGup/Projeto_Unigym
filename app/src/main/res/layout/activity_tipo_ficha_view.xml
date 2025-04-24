@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".professor.TreinosCriados">
+    tools:context=".professor.TipoFichaView">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -21,41 +21,21 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginBottom="40dp"
-            tools:srcCompat="@drawable/icon" />
+            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <ImageButton
+                android:id="@+id/btnCriarFicha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="-56dp"
-                tools:layout_editor_absoluteY="245dp">
-
-                <ImageButton
-                    android:id="@+id/btnCriarFicha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/group_45" />
-
-                <ImageButton
-                    android:id="@+id/btnApagarTreino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/group_46"
-                    tools:layout_editor_absoluteX="-121dp"
-                    tools:layout_editor_absoluteY="321dp" />
-
-            </LinearLayout>
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="60dp"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/group_21" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -65,7 +45,6 @@
                 android:background="#000000"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/line_1" />
-
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
