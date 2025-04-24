@@ -43,17 +43,10 @@
                     android:id="@+id/btnAdicionar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/group_47__2_" />
-
-                <ImageButton
-                    android:id="@+id/btnEditar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/group_45" />
 
                 <ImageButton
                     android:id="@+id/btnApagarTreino"

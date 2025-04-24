@@ -24,11 +24,6 @@ class ExercicioView @JvmOverloads constructor(
                 dialog.show((context as FragmentActivity).supportFragmentManager, "ApagarTreinoDialog")
             }
         }
-        val btnEditar = findViewById<ImageButton>(R.id.btnEditar)
-        btnEditar.setOnClickListener {
-            val intent = Intent(context, CriarExercicio_Professor::class.java)
-            context.startActivity(intent)
-        }
         val btnAdicionar = findViewById<ImageButton>(R.id.btnAdicionar)
         btnAdicionar.setOnClickListener {
             val intent = Intent(context, CriarTreino_Professor::class.java)

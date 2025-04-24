@@ -19,7 +19,7 @@ class ExercicioProfessorView @JvmOverloads constructor(
 
         val btnExercicioProfessor = findViewById<ImageButton>(R.id.btnExercicioProfessor)
         btnExercicioProfessor.setOnClickListener {
-            val intent = Intent(context, CriarTreino_Professor::class.java)
+            val intent = Intent(context, ExerciciosCriadosAdicionar::class.java)
             context.startActivity(intent)
         }
 
