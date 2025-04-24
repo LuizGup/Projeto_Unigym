@@ -25,18 +25,6 @@
             android:name=".aluno.notificacao_aluno_alterar_senha"
             android:exported="false" />
         <activity
-            android:name=".aluno.ToolBarAlunoView"
-            android:exported="false" />
-        <activity
-            android:name=".professor.ToolBarProfessorView"
-            android:exported="false" />
-        <activity
-            android:name=".ReturnView"
-            android:exported="false" />
-        <activity
-            android:name=".professor.TreinoView"
-            android:exported="false" />
-        <activity
             android:name=".professor.TreinosCriados"
             android:exported="true">
             <intent-filter>
