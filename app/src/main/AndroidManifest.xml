@@ -16,47 +16,26 @@
             android:name=".aluno.ConfirmarDataAluno"
             android:exported="false" />
         <activity
-            android:name=".aluno.ConfirmarDataAlunoView"
-            android:exported="false" />
-        <activity
-            android:name=".aluno.HorariosDisponiveisAluno"
-            android:exported="false" />
-        <activity
-            android:name=".aluno.MarcarAulaAlunoView"
-            android:exported="false" />
+            android:name=".aluno.DiasDisponiveisParaMarcarAluno"
+            android:exported="true" />
         <activity
             android:name=".aluno.DiasTreinadosAluno"
             android:exported="false" />
         <activity
-            android:name=".aluno.DiasDisponiveisParaMarcarAluno"
-            android:exported="false" />
-        <activity
-            android:name=".aluno.DialogDeConfirmacaoDeMarcarAula"
-            android:exported="false" />
-        <activity
             android:name=".aluno.MarcarAulaAluno"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".aluno.FichaDoDia"
             android:exported="false" />
         <activity
             android:name=".aluno.HomePageAluno"
-            android:exported="false" />
-        <activity
-            android:name=".aluno.MarcarAula"
-            android:exported="false" />
-        <activity
-            android:name=".aluno.ToolBarAlunoView"
-            android:exported="false" />
-        <activity
-            android:name=".professor.ToolBarProfessorView"
-            android:exported="false" />
-        <activity
-            android:name=".ReturnView"
-            android:exported="false" />
-        <activity
-            android:name=".professor.TreinoView"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".professor.TreinosCriados"
             android:exported="true">

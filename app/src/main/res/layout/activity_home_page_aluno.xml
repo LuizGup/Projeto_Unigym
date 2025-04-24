@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/helloProfessor"
+            android:id="@+id/helloAlunoX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -76,7 +76,7 @@
 
 
             <Button
-                android:id="@+id/VisualizarTreinobtn"
+                android:id="@+id/VizualizarTreinobtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -95,11 +95,11 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/CriarFicha_btn"
+            android:id="@+id/FichaDoDiabtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button_background1"
             android:paddingLeft="120dp"
             android:paddingTop="40dp"
@@ -111,13 +111,13 @@
 
     </LinearLayout>
 
-    <com.example.unigym.professor.ToolBarProfessorView
+    <com.example.unigym.aluno.ToolBarAlunoView
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:currentScreen="Homepage_Professor"/>
+        app:currentScreen="HomePageAluno"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

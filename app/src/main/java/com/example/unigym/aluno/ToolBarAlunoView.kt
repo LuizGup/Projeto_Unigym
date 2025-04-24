@@ -7,6 +7,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import androidx.core.content.ContextCompat.startActivity
 import com.example.unigym.R
 import com.example.unigym.professor.Homepage_Professor
 
@@ -30,19 +31,20 @@ class ToolBarAlunoView @JvmOverloads constructor(
         val btnProfile = findViewById<ImageButton>(R.id.btnProfile)
 
         btnHome.setOnClickListener {
-            if (currentScreenName != "Homepage_Professor") {
-                val intent = Intent(context, Homepage_Professor::class.java)
+            if (currentScreenName != "HomePageAluno") {
+                val intent = Intent(context, HomePageAluno::class.java)
                 context.startActivity(intent)
             }
         }
 
 
         btnGym.setOnClickListener {
-            // colocar logica de treino
+            val intent = Intent(context, FichaDoDia::class.java)
+            context.startActivity(intent)
         }
 
         btnProfile.setOnClickListener {
-            // colocar logica para entrar na tela do profile
+            // amanhã eu resolvo
         }
     }
 }

@@ -24,7 +24,7 @@
         <com.example.unigym.ReturnView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:returnActivity="com.example.unigym.professor.Homepage_Professor" />
+            app:returnActivity="com.example.unigym.aluno.HomePageAluno" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -44,7 +44,7 @@
                 android:paddingBottom="5dp"
                 android:scaleX="1.5"
                 android:scaleY="1.5"
-                android:text="Calendário de Aulas Marcadas"
+                android:text="Dias treinados"
                 android:textScaleX="1"
                 android:textStyle="bold" />
 
@@ -110,11 +110,11 @@
 
     </LinearLayout>
 
-    <com.example.unigym.professor.ToolBarProfessorView
+    <com.example.unigym.aluno.ToolBarAlunoView
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:currentScreen="Calendario_Aulas_Professor"
+        app:currentScreen="DiasTreinadosAluno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

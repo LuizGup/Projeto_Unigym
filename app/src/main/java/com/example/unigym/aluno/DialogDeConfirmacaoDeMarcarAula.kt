@@ -1,21 +1,37 @@
 package com.example.unigym.aluno
 
+import android.app.Dialog
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.DialogFragment
 import com.example.unigym.R
 
-class DialogDeConfirmacaoDeMarcarAula : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_dialog_de_confirmacao_de_marcar_aula)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+class DialogDeConfirmacaoDeMarcarAula : DialogFragment() {
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_de_confirmacao_de_marcar_aula, null)
+
+        val btnConfirmarAula = view.findViewById<ImageButton>(R.id.btnConfirmar)
+        val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
+
+        btnConfirmarAula.setOnClickListener {
+            // Ação ao clicar em "confirmar alterações"
+            dismiss()
         }
+
+        btnCancelar.setOnClickListener {
+            // Apenas fecha o dialog
+            dismiss()
+        }
+
+        return AlertDialog.Builder(requireContext())
+            .setView(view)
+            .create()
     }
 }

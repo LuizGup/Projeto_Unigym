@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MarcarAulaAluno">
+      <SelectionState runConfigName="HomePageAluno (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MarcarAulaAluno (1)">
+      <SelectionState runConfigName="HomePageAluno (3)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MarcarAulaAluno (2)">
+      <SelectionState runConfigName="HomePageAluno (4)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ConfirmarDataAluno">
+      <SelectionState runConfigName="HomePageAluno (5)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MarcarAulaAluno (3)">
+      <SelectionState runConfigName="HomePageAluno">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
