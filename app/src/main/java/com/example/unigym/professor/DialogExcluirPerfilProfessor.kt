@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import android.widget.Toast
 import com.example.unigym.R
 
 class DialogExcluirPerfilProfessor : DialogFragment() {
@@ -16,6 +17,7 @@ class DialogExcluirPerfilProfessor : DialogFragment() {
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarFicha.setOnClickListener {
+            Toast.makeText(requireContext(), "Sua conta foi excluida com sucesso!", Toast.LENGTH_LONG).show()
             // Ação ao clicar em "confirmar"
             dismiss()
         }

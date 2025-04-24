@@ -44,7 +44,8 @@ class ToolBarAlunoView @JvmOverloads constructor(
         }
 
         btnProfile.setOnClickListener {
-            // amanhã eu resolvo
+            val intent = Intent(context, PerfilAluno::class.java)
+            context.startActivity(intent)
         }
     }
 }

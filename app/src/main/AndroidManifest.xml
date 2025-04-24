@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Unigym"
         tools:targetApi="31">
+
+        <!-- Activities da sua branch que não estavam no main -->
         <activity
             android:name=".aluno.ConfirmarDataAluno"
             android:exported="false" />
@@ -31,128 +33,132 @@
             android:name=".aluno.HomePageAluno"
             android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.TreinosCriados"
-            android:exported="true">
+
+        <activity android:name=".professor.ExerciciosCriados" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.Calendario_Aulas_Professor"
-            android:exported="true">
+        <activity android:name=".professor.ExerciciosCriadosAdicionar" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.CriarTreino_Professor"
-            android:exported="true">
+        <activity android:name=".Tela_Cadastro_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.AulasMarcadas_Professor"
-            android:exported="true">
+        <activity android:name=".aluno.notificacao_aluno_alterar_senha" android:exported="false" />
+        <activity android:name=".professor.TreinosCriados" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.CriarExercicio_Professor"
-            android:exported="true">
+        <activity android:name=".professor.Calendario_Aulas_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".aluno.TelaCadastro_Aluno"
-            android:exported="true">
+        <activity android:name=".professor.CriarTreino_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.VisualizarTreinos_Professor"
-            android:exported="true">
+        <activity android:name=".professor.AulasMarcadas_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Tela_EsquecerSenha"
-            android:exported="true">
+        <activity android:name=".professor.CriarExercicio_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.TipoFicha"
-            android:exported="true">
+        <activity android:name=".aluno.TelaCadastro_Aluno" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.CriarFicha_Professor"
-            android:exported="true">
+        <activity android:name=".professor.VisualizarTreinos_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Tela_Login"
-            android:exported="true">
+        <activity android:name=".Tela_EsquecerSenha" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TelaInicial"
-            android:exported="true">
+        <activity android:name=".professor.TipoFicha" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".professor.Homepage_Professor"
-            android:exported="true">
+        <activity android:name=".professor.CriarFicha_Professor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Tela_Login" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TelaInicial" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".professor.Homepage_Professor" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".professor.PerfilProfessor" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aluno.PerfilAlunoEditar" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aluno.PerfilAluno" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".professor.PerfilProfessorEditar" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
-
 </manifest>

@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".professor.TreinosCriados">
+    android:background="#FFFFFF"
+    android:backgroundTint="#1FFFFFFF"
+    tools:context=".professor.ExercicioView">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -20,7 +22,8 @@
             android:id="@+id/imageView2"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
             tools:srcCompat="@drawable/icon" />
 
         <LinearLayout
@@ -37,19 +40,18 @@
                 tools:layout_editor_absoluteY="245dp">
 
                 <ImageButton
-                    android:id="@+id/btnCriarFicha"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btnAdicionar"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
                     android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/group_45" />
+                    android:src="@drawable/group_47__2_" />
 
                 <ImageButton
                     android:id="@+id/btnApagarTreino"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="40dp"
                     android:backgroundTint="#00FFFFFF"
                     app:srcCompat="@drawable/group_46"
                     tools:layout_editor_absoluteX="-121dp"
@@ -62,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
                 android:background="#000000"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/line_1" />

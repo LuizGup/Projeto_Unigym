@@ -5,55 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".professor.DialogMarcarAula_Professor">
+    tools:context=".professor.TipoFichaView">
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#FFFAFA"
-        android:backgroundTint="#D3D3D3"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Deseja excluir o perfil ?"
-                android:textSize="30sp" />
-
-            <ImageButton
-                android:id="@+id/btnCancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#00FFFFFF"
-                app:srcCompat="@drawable/cancel" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="40dp"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnConfirmarFicha_excluir"
+                android:id="@+id/btnCriarFicha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="60dp"
                 android:backgroundTint="#00FFFFFF"
-                app:srcCompat="@drawable/confirmarbtn" />
+                app:srcCompat="@drawable/group_21" />
 
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#000000"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/line_1" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

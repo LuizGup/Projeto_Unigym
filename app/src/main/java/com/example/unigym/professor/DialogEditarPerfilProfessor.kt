@@ -6,7 +6,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import android.widget.Toast
 import com.example.unigym.R
+import com.example.unigym.aluno.PerfilAlunoEditar
 
 class DialogEditarPerfilProfessor : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -17,11 +19,13 @@ class DialogEditarPerfilProfessor : DialogFragment() {
 
         btnConfirmarFicha.setOnClickListener {
             // Ação ao clicar em "confirmar alterações"
+
             dismiss()
         }
 
         btnCancelar.setOnClickListener {
             // Apenas fecha o dialog
+
             dismiss()
         }
 

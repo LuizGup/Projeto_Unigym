@@ -38,7 +38,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#00FFFFFF"
-                app:srcCompat="@drawable/cancel" />
+                app:srcCompat="@drawable/cancel"
+                android:contentDescription="@string/desc_btn_cancelar"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -52,7 +54,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#00FFFFFF"
-                app:srcCompat="@drawable/confirmarbtn" />
+                app:srcCompat="@drawable/confirmarbtn"
+                android:contentDescription="@string/desc_btn_confirmarficha"
+                />
 
         </LinearLayout>
     </LinearLayout>

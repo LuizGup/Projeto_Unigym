@@ -59,8 +59,9 @@
             android:gravity="center"
             android:orientation="horizontal">
 
+
             <Button
-                android:id="@+id/AulasAgendadasbtn"
+                android:id="@+id/btnVisualizarExercicios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
@@ -71,20 +72,17 @@
                 android:paddingTop="60dp"
                 android:paddingRight="15dp"
                 android:paddingBottom="60dp"
-                android:text="Aulas Agendadas"
+                android:text="Exercicios Criados"
                 android:textColor="#FFFFFF" />
-
 
             <Button
                 android:id="@+id/VizualizarTreinobtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="0dp"
                 android:layout_weight="1"
                 android:autoText="true"
                 android:background="@drawable/button_background1"
-                android:paddingLeft="10dp"
+                android:paddingLeft="15dp"
                 android:paddingTop="60dp"
                 android:paddingRight="15dp"
                 android:paddingBottom="60dp"
@@ -106,6 +104,20 @@
             android:paddingRight="120dp"
             android:paddingBottom="40dp"
             android:text="Criar Ficha"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/AulasAgendadasbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background1"
+            android:paddingLeft="120dp"
+            android:paddingTop="40dp"
+            android:paddingRight="120dp"
+            android:paddingBottom="40dp"
+            android:text="Aulas Agendadas"
             android:textColor="#FFFFFF" />
 
 

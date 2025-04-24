@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import android.widget.Toast
 import com.example.unigym.R
 
 class DialogAlterarSenhaProfessor : DialogFragment() {
@@ -16,7 +17,7 @@ class DialogAlterarSenhaProfessor : DialogFragment() {
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarFicha.setOnClickListener {
-            // Ação ao clicar em "confirmar"
+            Toast.makeText(requireContext(), "Sua senha foi alterada com sucesso!", Toast.LENGTH_LONG).show()
             dismiss()
         }
 
