@@ -2,6 +2,7 @@ package com.example.unigym.aluno
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.unigym.R
 
@@ -14,7 +15,6 @@ class PerfilAlunoEditar : AppCompatActivity (){
         btnConfirmarAlteracao.setOnClickListener {
             val dialog = DialogEditarPerfilAluno()
             dialog.show(supportFragmentManager, "dialog_editar_perfil")
-
 
         }
     }

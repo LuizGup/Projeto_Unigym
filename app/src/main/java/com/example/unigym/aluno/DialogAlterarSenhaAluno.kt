@@ -1,12 +1,14 @@
-package com.example.unigym
+package com.example.unigym.aluno
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
-import com.example.unigym.aluno.PerfilAluno
+import android.widget.Toast
+import com.example.unigym.R
 
 class DialogAlterarSenhaAluno : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -16,8 +18,8 @@ class DialogAlterarSenhaAluno : DialogFragment() {
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarFicha.setOnClickListener {
-            // Ação ao clicar em "confirmar alterações"
-            (activity as? PerfilAluno)?.mostrarNotificacaoAlteracao()
+            Log.d("DialogSenha", "Botão confirmar clicado!")
+            Toast.makeText(requireContext(), "Uma nova senha foi enviada para seu e-mail", Toast.LENGTH_LONG).show()
             dismiss()
         }
 

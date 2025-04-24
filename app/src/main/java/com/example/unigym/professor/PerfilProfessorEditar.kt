@@ -1,10 +1,8 @@
 package com.example.unigym.professor
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.unigym.DialogAlterarSenhaAluno
 import com.example.unigym.R
 import com.example.unigym.aluno.DialogEditarPerfilAluno
 
