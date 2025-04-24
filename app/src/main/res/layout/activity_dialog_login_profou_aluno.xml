@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dialog_Cadastro_ProfouAluno">
-
+    tools:context=".Dialog_Login_ProfouAluno">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -30,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="    Realizar cadastro como"
+                android:text="    Realizar login como"
                 android:textSize="30sp" />
 
             <ImageButton
@@ -63,5 +62,4 @@
 
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
