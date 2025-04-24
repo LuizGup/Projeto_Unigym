@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aluno.HomePageAluno">
+
+    <include
+        layout="@layout/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/welcomeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/helloProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Olá, Alunox!"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bem vindo ao UniGym"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/DiasTreinadosbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/button_background1"
+                android:paddingLeft="15dp"
+                android:paddingTop="60dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="60dp"
+                android:text="Dias treinados"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/VisualizarTreinobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/button_background1"
+                android:paddingLeft="10dp"
+                android:paddingTop="60dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="60dp"
+                android:text="Marcar aula"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/CriarFicha_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background1"
+            android:paddingLeft="120dp"
+            android:paddingTop="40dp"
+            android:paddingRight="120dp"
+            android:paddingBottom="40dp"
+            android:text="Ficha do dia"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <com.example.unigym.professor.ToolBarProfessorView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:currentScreen="Homepage_Professor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
