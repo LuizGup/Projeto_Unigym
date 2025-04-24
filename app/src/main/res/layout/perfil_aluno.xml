@@ -9,125 +9,131 @@
     <!-- Top Toolbar -->
 
 
-    <include
-        android:id="@+id/include_top"
-        layout="@layout/top_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <ImageView
-        android:id="@+id/profile_icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="Ícone de perfil"
-        app:layout_constraintBottom_toTopOf="@+id/linear_conteudo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791"
-        app:srcCompat="@drawable/icon"
-        tools:ignore="MissingConstraints" />
-
     <LinearLayout
-        android:id="@+id/linear_conteudo"
+        android:id="@+id/linearLayout6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/include_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/include_top">
+        app:layout_constraintTop_toTopOf="@+id/returnView">
 
-        <EditText
-            android:id="@+id/et_nome"
+        <include
+            android:id="@+id/include_top"
+            layout="@layout/top_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginBottom="8dp"
-            android:background="#D9D9D9"
-            android:enabled="false"
-            android:hint="Nome" />
+            android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/et_email"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginBottom="8dp"
-            android:background="#D9D9D9"
-            android:enabled="false"
-            android:hint="Email" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/et_data_nasc"
+            <com.example.unigym.ReturnView
+                android:id="@+id/returnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:returnActivity="com.example.unigym.aluno.HomePageAluno">
+
+            </com.example.unigym.ReturnView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="Ícone de perfil"
+            app:srcCompat="@drawable/icon"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linear_conteudo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginBottom="8dp"
-            android:background="#D9D9D9"
-            android:enabled="false"
-            android:hint="Data de nascimento" />
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/et_sexo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginBottom="16dp"
-            android:background="#D9D9D9"
-            android:enabled="false"
-            android:hint="Sexo" />
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="#D9D9D9"
+                android:enabled="false"
+                android:hint="Nome" />
 
-        <Button
-            android:id="@+id/btn_editar_dados"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="#D9D9D9"
-            android:text="Editar dados"
-            android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="#D9D9D9"
+                android:enabled="false"
+                android:hint="Email" />
 
-        <Button
-            android:id="@+id/btn_alterar_senha_aluno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#D9D9D9"
-            android:text="Alterar senha"
-            android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_data_nasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="#D9D9D9"
+                android:enabled="false"
+                android:hint="Data de nascimento" />
 
-        <Button
-            android:id="@+id/btn_excluir_conta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#D9D9D9"
-            android:text="Excluir conta"
-            android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9D9D9"
+                android:enabled="false"
+                android:hint="Sexo" />
 
+            <Button
+                android:id="@+id/btn_editar_dados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#D9D9D9"
+                android:text="Editar dados"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_alterar_senha_aluno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#D9D9D9"
+                android:text="Alterar senha"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_excluir_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D9D9D9"
+                android:text="Excluir conta"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Bottom Toolbar -->
-    <include
-        android:id="@+id/include_bottom"
-        layout="@layout/bottom_toolbar_aluno"
-        android:layout_width="match_parent"
+    <com.example.unigym.aluno.ToolBarAlunoView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:currentScreen="com.example.unigym.aluno.PerfilAluno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <com.example.unigym.ReturnView
-        android:id="@+id/returnView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:returnActivity="com.example.unigym.aluno.HomePageAluno"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="5dp">
-
-    </com.example.unigym.ReturnView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
