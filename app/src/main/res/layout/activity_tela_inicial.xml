@@ -19,7 +19,8 @@
             android:layout_width="154dp"
             android:layout_height="158dp"
             android:layout_marginBottom="80dp"
-            app:srcCompat="@drawable/image_2" />
+            app:srcCompat="@drawable/image_2"
+            android:src="@drawable/image_2" />
 
         <TextView
             android:id="@+id/Titulo_Inicial"

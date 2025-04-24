@@ -16,8 +16,7 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/returnView">
+        app:layout_constraintStart_toStartOf="parent">
 
         <include
             android:id="@+id/include_top"
@@ -48,6 +47,7 @@
             android:layout_marginBottom="50dp"
             android:contentDescription="Ícone de perfil"
             app:srcCompat="@drawable/icon"
+            android:src="@drawable/icon"
             tools:ignore="MissingConstraints" />
 
         <LinearLayout
