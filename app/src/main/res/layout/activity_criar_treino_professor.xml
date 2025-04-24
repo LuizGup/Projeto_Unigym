@@ -67,13 +67,11 @@
 
         </LinearLayout>
 
-        <include
-            layout="@layout/exercicio_professor"
+        <com.example.unigym.professor.ExercicioProfessorView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <include
-            layout="@layout/exercicio_professor"
+        <com.example.unigym.professor.ExercicioProfessorView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

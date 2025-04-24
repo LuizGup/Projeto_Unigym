@@ -17,11 +17,11 @@ class CriarFicha_Professor : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val btnAdicionarExercicio = findViewById<ImageButton>(R.id.btnAdicionarExercicio)
-        btnAdicionarExercicio.setOnClickListener {
-            val intent = Intent(this, ExerciciosCriadosAdicionar::class.java)
-            startActivity(intent)
-        }
+//
+//        val btnAdicionarExercicio = findViewById<ImageButton>(R.id.btnAdicionarExercicio)
+//        btnAdicionarExercicio.setOnClickListener {
+//            val intent = Intent(this, ExerciciosCriadosAdicionar::class.java)
+//            startActivity(intent)
+//        }
     }
 }
