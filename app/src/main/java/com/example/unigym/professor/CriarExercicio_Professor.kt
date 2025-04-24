@@ -22,7 +22,7 @@ class CriarExercicio_Professor : AppCompatActivity() {
 
         // Ação: Criar ficha ou exercício
         Confirmarbtn.setOnClickListener {
-            val intent = Intent(this, Homepage_Professor::class.java)
+            val intent = Intent(this, ExerciciosCriados::class.java)
             startActivity(intent)
         }
     }

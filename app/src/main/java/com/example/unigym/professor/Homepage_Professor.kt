@@ -25,6 +25,7 @@ class    Homepage_Professor : AppCompatActivity() {
         val btnCriarFicha = findViewById<Button>(R.id.CriarFicha_btn)
         val btnAulasAgendadas = findViewById<Button>(R.id.AulasAgendadasbtn)
         val btnVisualizarTreino = findViewById<Button>(R.id.VisualizarTreinobtn)
+        val btnVisualizarExercicios = findViewById<Button>(R.id.btnVisualizarExercicios)
 
         // Ação: Criar ficha ou exercício
         btnCriarFicha.setOnClickListener {
@@ -40,6 +41,10 @@ class    Homepage_Professor : AppCompatActivity() {
         // Ação: Ir para visualizar treinos
         btnVisualizarTreino.setOnClickListener {
             startActivity(Intent(this, VisualizarTreinos_Professor::class.java))
+        }
+
+        btnVisualizarExercicios.setOnClickListener {
+            startActivity(Intent(this, ExerciciosCriados::class.java))
         }
     }
 }

@@ -67,13 +67,11 @@
 
         </LinearLayout>
 
-        <include
-            layout="@layout/activity_tipo_ficha"
-            android:layout_width="fill_parent"
+        <com.example.unigym.professor.TipoFichaView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <include
-            layout="@layout/activity_tipo_ficha"
+        <com.example.unigym.professor.TipoFichaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
