@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela_Cadastro_Professor">
+    tools:context="com.example.unigym.Tela_Cadastro_Professor">
 
     <com.example.unigym.ReturnView
         android:layout_width="match_parent"
