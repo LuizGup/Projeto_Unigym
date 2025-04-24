@@ -26,7 +26,7 @@ class ExercicioView @JvmOverloads constructor(
         }
         val btnEditar = findViewById<ImageButton>(R.id.btnEditar)
         btnEditar.setOnClickListener {
-            val intent = Intent(context, CriarTreino_Professor::class.java)
+            val intent = Intent(context, CriarExercicio_Professor::class.java)
             context.startActivity(intent)
         }
         val btnAdicionar = findViewById<ImageButton>(R.id.btnAdicionar)
