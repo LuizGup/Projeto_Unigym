@@ -1,78 +1,67 @@
 package com.example.unigym
 
 import android.util.Log
+import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class MVC_Model {
-    class PessoaModel {
+
+    class UsuarioCadastro {
         private val db = Firebase.firestore
         private val colecao = db.collection("pessoa")
 
-        fun criarPessoa(
+        fun cadastrarPessoa(
             nome: String,
-            idade: Int,
-            altura: Double,
-            peso: Int,
-            cidade: String
+            email: String,
+            senha: String,
+            onSuccess: () -> Unit,
+            onFailure: (Exception) -> Unit
         ) {
             val pessoa = hashMapOf(
                 "nome" to nome,
-                "idade" to idade,
-                "altura" to altura,
-                "peso" to peso,
-                "cidade" to cidade
+                "email" to email,
+                "senha" to senha
             )
 
             colecao.add(pessoa)
-                .addOnSuccessListener { docRef ->
-                    Log.d("MODEL", "Pessoa criada com ID: ${docRef.id}")
+                .addOnSuccessListener {
+                    Log.d("MODEL", "Pessoa cadastrada com ID: ${it.id}")
+                    onSuccess()
                 }
-                .addOnFailureListener {
-                    Log.e("MODEL", "Erro ao criar pessoa", it)
+                .addOnFailureListener { ex ->
+                    Log.e("MODEL", "Erro ao cadastrar", ex)
+                    onFailure(ex)
                 }
         }
+    }
 
-        fun lerPessoas() {
-            colecao.get()
+    class UsuarioLogin {
+        private val db = Firebase.firestore
+        private val colecao = db.collection("pessoa")
+
+        fun logar(
+            email: String,
+            senha: String,
+            onResult: (Boolean, DocumentSnapshot?) -> Unit
+        ) {
+            colecao.whereEqualTo("email", email).get()
                 .addOnSuccessListener { result ->
-                    for (document in result) {
-                        Log.d("MODEL", "${document.id} => ${document.data}")
+                    if (result.isEmpty) {
+                        onResult(false, null)
+                    } else {
+                        val doc = result.documents[0]
+                        val senhaArmazenada = doc.getString("senha")
+                        if (senhaArmazenada == senha) {
+                            onResult(true, doc)
+                        } else {
+                            onResult(false, null)
+                        }
                     }
                 }
                 .addOnFailureListener {
-                    Log.e("MODEL", "Erro ao ler pessoas", it)
-                }
-        }
-
-        fun atualizarPessoa(
-            id: String,
-            nome: String,
-            idade: Int,
-            altura: Double,
-            peso: Int,
-            cidade: String
-        ) {
-            colecao.document(id).update(
-                "nome", nome,
-                "idade", idade,
-                "altura", altura,
-                "peso", peso,
-                "cidade", cidade
-            ).addOnSuccessListener {
-                Log.d("MODEL", "Pessoa atualizada com sucesso")
-            }.addOnFailureListener {
-                Log.e("MODEL", "Erro ao atualizar", it)
-            }
-        }
-
-        fun deletarPessoa(id: String) {
-            colecao.document(id).delete()
-                .addOnSuccessListener {
-                    Log.d("MODEL", "Pessoa deletada com sucesso")
-                }
-                .addOnFailureListener {
-                    Log.e("MODEL", "Erro ao deletar", it)
+                    Log.e("MODEL", "Erro ao logar", it)
+                    onResult(false, null)
                 }
         }
     }
