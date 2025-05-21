@@ -19,9 +19,9 @@ class Tela_Login : AppCompatActivity() {
         val ntemcadasttro = findViewById<Button>(R.id.Ntemcadastro)
 
         entrar.setOnClickListener{
-            startActivity(Intent(this, Homepage_Professor::class.java))
+            val dialog = Dialog_Login_ProfouAluno()
+            dialog.show(supportFragmentManager, "Dialog_Login_ProfouAluno")
         }
-
         esquecersenha.setOnClickListener{
             startActivity(Intent(this,Tela_EsquecerSenha::class.java))
         }

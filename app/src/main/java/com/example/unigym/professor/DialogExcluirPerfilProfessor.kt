@@ -1,6 +1,7 @@
 package com.example.unigym.professor
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.unigym.R
+import com.example.unigym.TelaInicial
 
 class DialogExcluirPerfilProfessor : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -18,7 +20,8 @@ class DialogExcluirPerfilProfessor : DialogFragment() {
 
         btnConfirmarFicha.setOnClickListener {
             Toast.makeText(requireContext(), "Sua conta foi excluida com sucesso!", Toast.LENGTH_LONG).show()
-            // Ação ao clicar em "confirmar"
+            val intent = Intent(requireContext(), TelaInicial::class.java)
+            startActivity(intent)
             dismiss()
         }
 

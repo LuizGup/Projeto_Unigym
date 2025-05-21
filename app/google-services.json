@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107126365905",
+    "project_id": "unigym-8c339",
+    "storage_bucket": "unigym-8c339.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107126365905:android:7190f12a97a3231a886ff0",
+        "android_client_info": {
+          "package_name": "com.example.unigym"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWJH8hRa98CF467271knHZzO9T5VzLQ8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

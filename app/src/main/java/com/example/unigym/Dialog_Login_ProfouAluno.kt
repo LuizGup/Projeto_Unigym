@@ -7,26 +7,28 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import com.example.unigym.aluno.HomePageAluno
 import com.example.unigym.aluno.TelaCadastro_Aluno
+import com.example.unigym.professor.Homepage_Professor
 
-class Dialog_Cadastro_ProfouAluno : DialogFragment() {
+class Dialog_Login_ProfouAluno : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_cadastro_profou_aluno, null)
+        val view = LayoutInflater.from(requireContext()).inflate(R.layout.activity_dialog_login_profou_aluno, null)
 
-        val btnprof = view.findViewById<ImageButton>(R.id.btnLoginProfessor)
-        val btnaluno = view.findViewById<ImageButton>(R.id.btnLoginAluno)
+        val btnLoginProfessor = view.findViewById<ImageButton>(R.id.btnLoginProfessor)
+        val btnLoginAluno = view.findViewById<ImageButton>(R.id.btnLoginAluno)
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar)
 
-        btnprof.setOnClickListener {
-            val intent = Intent(requireContext(), Tela_Cadastro_Professor::class.java)
+        btnLoginProfessor.setOnClickListener {
+            val intent = Intent(requireContext(), Homepage_Professor::class.java)
             startActivity(intent)
             dismiss()
         }
         //
 
-        btnaluno.setOnClickListener {
-            val intent = Intent(requireContext(), TelaCadastro_Aluno::class.java)
+        btnLoginAluno.setOnClickListener {
+            val intent = Intent(requireContext(), HomePageAluno::class.java)
             startActivity(intent)
             dismiss()
         }
@@ -38,5 +40,5 @@ class Dialog_Cadastro_ProfouAluno : DialogFragment() {
         return AlertDialog.Builder(requireContext())
             .setView(view)
             .create()
-  }
+    }
 }

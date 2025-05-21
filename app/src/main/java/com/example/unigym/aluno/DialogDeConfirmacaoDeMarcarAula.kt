@@ -1,6 +1,7 @@
 package com.example.unigym.aluno
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageButton
@@ -12,6 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.DialogFragment
 import com.example.unigym.R
+import com.example.unigym.TelaInicial
 
 class DialogDeConfirmacaoDeMarcarAula : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -21,7 +23,8 @@ class DialogDeConfirmacaoDeMarcarAula : DialogFragment() {
         val btnCancelar = view.findViewById<ImageButton>(R.id.btnCancelar) // novo botão
 
         btnConfirmarAula.setOnClickListener {
-            // Ação ao clicar em "confirmar alterações"
+            val intent = Intent(requireContext(), HomePageAluno::class.java)
+            startActivity(intent)
             dismiss()
         }
 
