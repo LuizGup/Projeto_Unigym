@@ -11,7 +11,10 @@ androidxJunit = "1.1.5"
 espressoCore = "3.5.1"
 generativeai = "0.6.0"
 generativeaiVersion = "0.9.0"
-firebaseFirestoreKtx = "25.1.4"  # Use 0.6.0 para a versão do SDK Gemini (igual você tinha)
+firebaseFirestoreKtx = "25.1.4"
+annotation = "1.6.0"
+lifecycleLivedataKtx = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"  # Use 0.6.0 para a versão do SDK Gemini (igual você tinha)
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -29,3 +32,6 @@ androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", vers
 generativeai = { module = "com.google.ai.client:generativeai", version.ref = "generativeai" }
 google-generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeaiVersion" }
 firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }

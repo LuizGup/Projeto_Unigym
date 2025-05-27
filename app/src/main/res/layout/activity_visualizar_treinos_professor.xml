@@ -67,13 +67,12 @@
 
         </LinearLayout>
 
-        <com.example.unigym.professor.TreinoView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTreinos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <com.example.unigym.professor.TreinoView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp" />
     </LinearLayout>
 
     <com.example.unigym.professor.ToolBarProfessorView
