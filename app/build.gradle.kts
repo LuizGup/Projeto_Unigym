@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -41,10 +44,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
-
+    
     implementation(libs.generativeai)
     implementation(libs.google.generativeai)
-    implementation(libs.firebase.firestore.ktx) // dependência Gemini
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx) // dependência Gemini
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
