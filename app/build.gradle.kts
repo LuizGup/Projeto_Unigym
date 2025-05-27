@@ -41,10 +41,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
-
     implementation(libs.generativeai)
-    implementation(libs.google.generativeai) // dependência Gemini
-
+    implementation(libs.google.generativeai)
+    implementation(libs.generativeai.v030)
+    implementation(libs.kotlinx.coroutines.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
