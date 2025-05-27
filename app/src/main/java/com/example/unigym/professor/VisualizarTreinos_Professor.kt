@@ -1,5 +1,6 @@
 package com.example.unigym.professor
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,6 +27,16 @@ class VisualizarTreinos_Professor : AppCompatActivity() {
         )
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = TreinoAdapter(listaTreinos)
+        recyclerView.adapter = TreinoAdapter(
+            listaTreinos,
+            onEditarClick = { treino ->
+                val intent = Intent(this, CriarTreino_Professor::class.java)
+                startActivity(intent)
+            },
+            onApagarClick = { treino ->
+                val dialog = ApagarTreinoDialog()
+                dialog.show(supportFragmentManager, "ApagarTreinoDialog")
+            }
+        )
     }
 }

@@ -45,8 +45,6 @@ dependencies {
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
 
-    implementation(libs.generativeai)
-    implementation(libs.google.generativeai)
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.lifecycle.livedata.ktx)

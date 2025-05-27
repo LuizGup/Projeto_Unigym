@@ -9,8 +9,11 @@ import com.example.unigym.R
 
 data class Treino(val titulo: String)
 
-class TreinoAdapter(private val lista: List<Treino>) :
-    RecyclerView.Adapter<TreinoAdapter.TreinoViewHolder>() {
+class TreinoAdapter(
+    private val lista: List<Treino>,
+    private val onEditarClick: (Treino) -> Unit,
+    private val onApagarClick: (Treino) -> Unit
+) : RecyclerView.Adapter<TreinoAdapter.TreinoViewHolder>() {
 
     class TreinoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titulo: TextView = view.findViewById(R.id.tituloTreino)
@@ -29,11 +32,12 @@ class TreinoAdapter(private val lista: List<Treino>) :
     override fun onBindViewHolder(holder: TreinoViewHolder, position: Int) {
         val treino = lista[position]
         holder.titulo.text = treino.titulo
+
         holder.btnEditar.setOnClickListener {
-            // TODO: ação de editar treino
+            onEditarClick(treino)
         }
         holder.btnApagar.setOnClickListener {
-            // TODO: ação de apagar treino
+            onApagarClick(treino)
         }
     }
 }
