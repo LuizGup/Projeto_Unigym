@@ -43,7 +43,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     implementation(libs.generativeai)
-    implementation(libs.google.generativeai) // dependência Gemini
+    implementation(libs.google.generativeai)
+    implementation(libs.firebase.firestore.ktx) // dependência Gemini
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -10,7 +10,8 @@ junit = "4.13.2"
 androidxJunit = "1.1.5"
 espressoCore = "3.5.1"
 generativeai = "0.6.0"
-generativeaiVersion = "0.9.0"  # Use 0.6.0 para a versão do SDK Gemini (igual você tinha)
+generativeaiVersion = "0.9.0"
+firebaseFirestoreKtx = "25.1.4"  # Use 0.6.0 para a versão do SDK Gemini (igual você tinha)
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -27,3 +28,4 @@ androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJu
 androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
 generativeai = { module = "com.google.ai.client:generativeai", version.ref = "generativeai" }
 google-generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeaiVersion" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
