@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".professor.Chatbox">
+    tools:context=".aluno.Chatbot_Aluno">
 
     <EditText
         android:id="@+id/etUserInput"
@@ -57,8 +57,9 @@
     <com.example.unigym.ReturnView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:returnActivity="com.example.unigym.professor.Homepage_Professor"
+        app:returnActivity="com.example.unigym.aluno.HomePageAluno"
         tools:layout_editor_absoluteX="-7dp"
         tools:layout_editor_absoluteY="11dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
