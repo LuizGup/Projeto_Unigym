@@ -7,43 +7,15 @@
     android:padding="16dp"
     tools:context=".aluno.Chatbot_Aluno">
 
-    <EditText
-        android:id="@+id/etUserInput"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Faça sua pergunta aqui..."
-        android:inputType="textMultiLine"
-        android:maxLines="5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/etUserInput"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/btnSend"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+    <!-- Área de resposta (ScrollView com TextView) -->
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/progressBar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -52,14 +24,57 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
             tools:text="Aqui aparecerá a resposta do chatbot..." />
     </ScrollView>
+
+    <!-- Container inferior para entrada de texto e botão -->
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/etUserInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Faça sua pergunta aqui..."
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+    </LinearLayout>
+
+    <!-- Barra de progresso centralizada acima da área de entrada -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/messageContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botão de retorno invisível ou no plano de fundo -->
     <com.example.unigym.ReturnView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:returnActivity="com.example.unigym.aluno.HomePageAluno"
-        tools:layout_editor_absoluteX="-7dp"
-        tools:layout_editor_absoluteY="11dp" />
-
+        app:returnActivity="com.example.unigym.aluno.HomePageAluno" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
